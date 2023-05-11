@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../assets/swiper/swiper.min.css">
+   	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<header id="gnb">
+		<div class="gnb_top">
+			<a href="index.html"><h1 class="logo">앱안심인증</h1></a>
+			<a class="btn_menu" href="javascript:void(0);">전체메뉴</a>
+		</div>
+		<nav class="gnb_menu">
+			<ul>
+				<li>
+					<a href="index.html">홈</a>
+				</li>
+				<li>
+					<a href="service.html">서비스 이용요금</a>
+				</li>
+				<li>
+					<a href="support.html">개발가이드</a>
+				</li>
+				<li>
+					<a href="contact.html">고객센터</a>
+				</li>
+			</ul>
+			<div class="bg_dim"></div>
+		</nav>
+	</header>
+	<div class="main trial">
+		<div class="img_bg container">
+			<img class="img" src="../images/main_img_01_text.png" />
+			<a href="" class="btn typeA">트라이얼 신청하기<i class="ic_more">&#xE001;</i></a>
+			<p class="sub_txt">특허 받은 세계 최초 2채널 인증으로 스미싱 걱정 없이 안전하게 인증하세요</p>
+		</div>
+	</div>
+	<div class="main intro">
+		<div class="container">
+        	<nav class="intro_nav">
+        		<span data-nav="slide1" class="active">1. 확인 버튼 터치</span><i class="ic_more">&#xE001;</i>
+                <span data-nav="slide2">2. 문자발송</span><i class="ic_more">&#xE001;</i>
+                <span data-nav="slide3">3. 인증완료</span>
+        	</nav>
+            <div class="item slide1 active">
+            	<h2 class="main_txt">개인정보 입력 없이<br />보안은 <strong class="hl">강력하게</strong></h2>
+                <p class="sub_txt">불필요한 입력 없이 버튼 터치만 한번!<br>간편하게 인증이 진행됩니다</p>
+                <p class="desc_txt">iOS는 휴대폰번호 입력이 필요합니다.</p>
+            </div>
+            <div class="item slide2">
+                <h2 class="main_txt">인증문자,<br /><strong class="hl">전송만 하면 끝</strong></h2>
+                <p class="sub_txt">휴대폰 기기 번호가 암호화되어 인증 메세지로 입력됩니다.<br />사용자가 문자발송하기에 인증비용도 절감 됩니다</p>
+            </div>
+            <div class="item slide3">
+                <h2 class="main_txt">발신번호조작불가를<br />이용한 <strong class="hl">완벽한 인증!</strong></h2>
+                <p class="sub_txt">입력된 휴대폰 정보와 전송된 문자 메시지의 정보를<br />대조하여 휴대폰 소지 인증이 완료됩니다.</p>
+            </div>
+            <div class="device">
+            	<img src="../images/main_img_02-1.png" class="item slide1 active" />
+            	<img src="../images/main_img_02-2.png" class="item slide2"/>
+            	<img src="../images/main_img_02-3.png" class="item slide3" />
+            </div>
+        </div>
+	</div>
+	<script>
+		$('.intro .intro_nav span').click(function(){
+			$('.intro .intro_nav span').removeClass('active');
+			$(this).addClass('active');
+
+			var data_name = $(this).attr('data-nav');
+			$('.intro .item').hide();
+			$('.intro').find('.'+data_name).show();
+		});
+	</script>
+	<div class="product">
+		<ul class="product_list clearfix">
+			<li>
+				<a href="">
+					<h2 class="name">베이직<i class="ic_more">&#xE001;</i></h2>
+					<div class="option">1개월</div>
+					<div class="price">100,000 <span class="unit">원</span></div>
+					<div class="option">월 5,000건 문자인증</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2 class="name">프리미엄<i class="ic_more">&#xE001;</i></h2>
+					<div class="option">1개월</div>
+					<div class="price">500,000 <span class="unit">원</span></div>
+					<div class="option">월 5,000건 문자인증</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2 class="name">플래티넘<i class="ic_more">&#xE001;</i></h2>
+					<div class="option">6개월</div>
+					<div class="price">9,900,000 <span class="unit">원</span></div>
+					<div class="option">월 5,000건 문자인증</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2 class="name">스페셜<i class="ic_more">&#xE001;</i></h2>
+					<div class="option">1년</div>
+					<div class="price">5,100,000 <span class="unit">원</span></div>
+					<div class="option">월 5,000건 문자인증</div>
+				</a>
+			</li>
+		</ul>
+		<div class="remark">
+			<p>모든 서비스의 이용요금은 VAT 별도입니다</p>
+		</div>
+	</div>
+	<div class="main featured">
+		<div class="featured-slide swiper-container">
+            <h2 class="featured_tt">앱안심인증, 이렇게 다릅니다</h2>
+            <div class="swiper-wrapper">
+            	<div class="swiper-slide">
+                    <div class="content">
+                    	<h3>보안 강화</h3>
+                      	<div class="main_txt"><strong class="hl">국내 유일 특허</strong> 받은<br> 인증 기술!</div>
+                       	<div class="explain_area">
+							<p>유ᆞ무선 2개의 분리된 채널로 더욱 강력해진 개인정보 보호!</p>
+							<p>현재 금융권에서 상용 중인 서비스로 금융권 수준의 보안을 준수합니다.</p>
+						</div>
+                       	<div class="explain_area sub">
+                       		<p>이동통신단말기, 어플리케이션 인증 장치 및 방법<br>(등록번호 : 10-1289028)</p>
+                           	<p>모바일 단말기, 제2채널 인증장치 및 방법<br>(등록번호 : 10-1328603,) 등록번호 : 10-1353484)</p>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                    	<h3>스미싱 방지</h3>
+                        <div class="main_txt">문자 전송 방식으로<br><strong class="hl">스미싱 걱정없이!</strong></div>
+                        <div class="explain_area">
+                        	<p>기존 문자수신 인증 방식은 인증코드가 노출될 수 있어 스미싱의 위험이 있습니다.<br />앱안심인증은 사용자가 직접 문자를 전송하여 스미싱을 방지합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                    	<h3>간편한 인증</h3>
+                        <div class="main_txt">불필요한 정보 입력없이<br><strong class="hl">간편하게 인증!</strong></div>
+                        <div class="explain_area">
+                        	<p>개인정보 유출 방지!<br />개인 정보 입력 없이 버튼 터치 한번에 인증이 가능합니다</p>
+						</div>
+                       	<div class="explain_area sub">
+                       		<p>iOS는 휴대폰 입력이 필요합니다</p>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                       	<h3>빠른 적용</h3>
+                        <div class="main_txt">오픈 API로<br><strong class="hl">쉽고 빠른 솔루션</strong> 적용</div>
+                        <div class="explain_area">
+                        	<p>라이브러리 00개만 붙여 넣으면 적용완료!<br />오픈 API, SDK 제공으로 비대면으로 누구든지 빠르고 쉽게 적용이 가능합니다.</p>
+						</div>
+                       	<div class="btn_area">
+                        	<a href="" class="btn-detail">개발 가이드 확인<i class="ic_more">&#xE001;</i></a>
+						</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                       	<h3>저렴한 비용</h3>
+                        <div class="main_txt">인증 서비스<br><strong class="hl">합리적인 가격으로!</strong></div>
+                        <div class="explain_area">
+                        	<p><b>월 500,000원이면 무려 00,000건 인증 가능</b><br />인증번호 문자 전송이 필요 없는 고객이 직접 문자발송 방식으로<br />저렴한 가격에
+                            인증이 가능합니다.</p>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-buttons">
+                <div class="swiper-button-prev">&#xE000;</div>
+                <div class="swiper-button-next">&#xE001;</div>
+            </div>
+            <div class="featured-pagination"></div>
+		</div>
+	</div>
+   	<script src="../assets/swiper/swiper.min.js"></script>
+    <script>
+        var featuredSlide = new Swiper('.featured-slide', {
+            pagination: {
+                el: '.featured-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+    </script>
+    <div class="main portfolio">
+        <div class="container">
+            <div class="contents pb0">
+                <div class="item slide1 active">
+                    <h2>하나1Qpay<i class="ic_plus"></i><span class="fwn">앱안심인증</span></h2>
+                    <div class="main_txt">보안이 철저한<br /><strong class="hl">금융사에서도 선택한</strong><br>인증 솔루션!</div>
+                    <div class="explain_area">
+                    	<p>금융사 앱카드에서도 서비스 가입 시 앱안심인증을 통해 휴대폰 소지 인증을 확인하고 있습니다.</p>
+					</div>
+                </div>
+                <div class="item slide2">
+					<h2><b>NH앱캐시</b><i class="ic_plus"></i><span class="fwn">앱안심인증</span></h2>
+                    <div class="main_txt">보안이 철저한<br /><strong class="hl">금융사에서도 선택한</strong><br>인증 솔루션!</div>
+                    <div class="explain_area">
+                    	<p>금융사 앱카드에서도 서비스 가입 시 앱안심인증을 통해 휴대폰 소지 인증을 확인하고 있습니다.</p>
+					</div>
+                </div>
+                <div class="item slide3">
+					<h2><b>국민 Kmotion</b><i class="ic_plus"></i><span class="fwn">앱안심인증</span></h2>
+                    <div class="main_txt">보안이 철저한<br /><strong class="hl">금융사에서도 선택한</strong><br>인증 솔루션!</div>
+                    <div class="explain_area">
+                    	<p>금융사 앱카드에서도 서비스 가입 시 앱안심인증을 통해 휴대폰 소지 인증을 확인하고 있습니다.</p>
+					</div>
+                </div>
+                <div class="item slide4">
+					<h2><b>신한 FAN페이</b><i class="ic_plus"></i></i><span class="fwn">앱안심인증</span></h2>
+                    <div class="main_txt">보안이 철저한<br /><strong class="hl">금융사에서도 선택한</strong><br>인증 솔루션!</div>
+                    <div class="explain_area">
+                    	<p>금융사 앱카드에서도 서비스 가입 시 앱안심인증을 통해 휴대폰 소지 인증을 확인하고 있습니다.</p>
+					</div>
+                </div>
+                <nav class="card_list">
+                    <span data-nav="slide1" class="active">
+                        <img src="../images/img_app_01.png" />
+                        <img src="../images/img_app_01_sel.png" />
+                    </span>
+                    <span data-nav="slide2">
+                        <img src="../images/img_app_02.png" />
+                        <img src="../images/img_app_02_sel.png" />
+                    </span>
+                    <span data-nav="slide3">
+                        <img src="../images/img_app_03.png" />
+                        <img src="../images/img_app_03_sel.png" />
+                    </span>
+                    <span data-nav="slide4">
+                        <img src="../images/img_app_04.png" />
+                        <img src="../images/img_app_04_sel.png" />
+                    </span>
+                </nav>
+            </div>
+            <div class="image_slider">
+                <div class="item slide1 active">
+                   	<ul class="navigation">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="device">
+                        <div class="active"><img src="../images/main_img_04-1-1.png" /></div>
+                        <div><img src="../images/main_img_04-1-2.png" /></div>
+                        <div><img src="../images/main_img_04-1-3.png" /></div>
+                    </div>
+                </div>
+                <div class="item slide2">
+                   	<ul class="navigation">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="device">
+                        <div class="active"><img src="../images/main_img_04-2-1.png" /></div>
+                        <div><img src="../images/main_img_04-2-2.png" /></div>
+                        <div><img src="../images/main_img_04-2-3.png" /></div>
+                    </div>
+                </div>
+                <div class="item slide3">
+                	<ul class="navigation">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="device">
+                        <div class="active"><img src="../images/main_img_04-3-1.png" /></div>
+                        <div><img src="../images/main_img_04-3-2.png" /></div>
+                        <div><img src="../images/main_img_04-3-3.png" /></div>
+                    </div>
+                    
+                </div>
+                <div class="item slide4">
+                	<ul class="navigation">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="device">
+                        <div class="active"><img src="../images/main_img_04-4-1.png" /></div>
+                        <div><img src="../images/main_img_04-4-2.png" /></div>
+                        <div><img src="../images/main_img_04-4-3.png" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+		$('.main [data-nav]').click(function () {
+            $(this).parents('.main').find('.active').removeClass('active');
+            $(this).parents('.main').find('.' + $(this).attr('data-nav')).addClass('active');
+            $(this).parents('.main').find('.device div:first-child').addClass('active');
+            $(this).parents('.main').find('.navigation li:first-child').addClass('active');
+            $(this).addClass('active');
+        });
+
+        setInterval(function () {
+            if ($('.portfolio .device div:last-child').hasClass('active')) {
+                $('.portfolio .device div:last-child').removeClass('active');
+                $('.portfolio .device div:first-child').addClass('active');
+                $('.portfolio .device div:last-child').prev().removeClass('fixed');
+                $('.portfolio .device div:last-child').addClass('fixed');
+                $('.portfolio .navigation li:last-child').removeClass('active');
+                $('.portfolio .navigation li:first-child').addClass('active');
+            } else {
+                $('.portfolio .device').find('.active').next().addClass('active').prev().removeClass('active');
+				$('.portfolio .device').find('.fixed').next().addClass('fixed').prev().removeClass('fixed');
+				$('.portfolio .device div:last-child').removeClass('fixed');
+                $('.portfolio .navigation').find('.active').next().addClass('active').prev().removeClass('active');
+            }
+			$('.portfolio .device').find('.active').prev().addClass('fixed');
+        }, 3500);
+    </script>
+	<div class="main contact">
+		<div class="container">
+			<h2>무엇을 도와드릴까요?</h2>
+			<a class="btn typeB" href="contact_inquiry.html">1:1 문의하기<i class="ic_more">&#xE001;</i></a>
+			<div class="contact_info">
+				<ul class="clearfix">
+					<li>
+						<h3>결제/입금확인 문의</h3>
+						<div class="tel">02-420-5573</div>
+						<div class="email">purchase@seeroo.co.kr</div>
+					</li>
+					<li>
+						<h3>제품/기술 문의</h3>
+						<div class="tel">02-420-5573</div>
+						<div class="email">appansim@seeroo.co.kr</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="container">
+			<div class="footer_logo">
+                <img src="../images/img_ci_text.png" />
+            </div>
+			<div class="footer_info">
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a><br>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+            <p class="copy_rights">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

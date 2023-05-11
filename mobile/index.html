@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=yes, width=device-width">
+	<title></title>
+</head>
+<style>
+	* {border:none; margin:0; padding:0; box-sizing:border-box;}
+	body {height:100%; font-size:13px;}
+	a {display:inline-block; text-decoration:none; color:#439aef;}
+	table {width:100%; margin-bottom:40px; border-collapse:collapse; border-spacing:0;}
+	table tr:hover {background:#FFFBDF;}
+	th, td {padding:8px 20px; text-align:left; border-bottom:1px solid #CFCFCF;}
+	thead th {height:40px; color:#fff; background:#0d0d0d;}
+	tbody th, tbody td {font-size:12px;}
+	thead th:first-child, tbody td:first-child {text-align:center;}
+	
+	#wrap {position:relative; width:100%; min-width:1024px; height:100%; min-height:100%;}
+	
+	#header {position:fixed; left:0; right:0; top:0; width:100%; min-width:1024px; height:80px; z-index:100; border-bottom:1px solid #ddd; box-shadow: 0px 2px 3px 1px rgba(26, 26, 26, 0.06); background:#fff;}
+	#header h1 {display:inline-block; line-height:24px;}
+	#header .name {position:absolute; left:30px; top:50%; margin-top:-12px; line-height:24px; }
+	#header .name .logo {display:inline-block; width:28px; height:auto; margin-right:8px; background:url("./images/img_bi_s_wh.png") no-repeat; background-size:contain; text-indent:-9999px;}
+	#header h1, #header .name span {font-size:20px; font-weight:bold; vertical-align:top; color:#0d0d0d;}
+	
+	.frame_area {position:fixed; top:110px; left:30px; -webkit-backface-visibility:visible;}
+	.frame_wrap {position:relative; width:385px; height:798px; background: url(./mobile_img.svg) no-repeat 0; background-size:100%; overflow:hidden; -webkit-backface-visibility:visible;}
+	.frame_wrap iframe {position:absolute; top:5px; left:13px; border-radius:36px;}
+	
+	.menu {width:calc(100% - 475px); margin:120px 30px 0 445px;}
+
+</style>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="name">
+			<h1 class="logo">로고</h1>
+			<span>앱안심인증 화면 목록</span>
+		</div>
+	</div>
+	
+	<div class="frame_area">
+		<div class="frame_wrap">
+			<iframe src="html/index.html" width="360" height="787" name="iframe_a" frameborder="0" scrolling="auto"></iframe>
+		</div>
+	</div>
+
+	<div class="menu">
+		<table>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;"/>
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>홈</td>
+					<td></td>
+					<td><a href="html/index.html" target="iframe_a">index.html</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>서비스 이용요금</td>
+					<td></td>
+					<td><a href="html/service.html" target="iframe_a">service.html</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>개발가이드</td>
+					<td></td>
+					<td><a href="html/support.html" target="iframe_a">support.html</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>고객센터</td>
+					<td></td>
+					<td><a href="html/contact.html" target="iframe_a">contact.html</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>1:1문의</td>
+					<td></td>
+					<td><a href="html/contact_inquiry.html" target="iframe_a">contact_inquiry.html</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>서비스 결제</td>
+					<td></td>
+					<td><a href="html/payment_info.html" target="iframe_a">payment_info.html</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td></td>
+					<td>결제 완료</td>
+					<td><a href="html/payment_complete.html" target="iframe_a">payment_complete.html</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>가입</td>
+					<td></td>
+					<td><a href="html/join.html" target="iframe_a">join.html</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>트라이얼 가입</td>
+					<td></td>
+					<td><a href="html/trial_join.html" target="iframe_a">trial_join.html</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td></td>
+					<td>트라이얼 가입 완료</td>
+					<td><a href="html/trial_join_complete.html" target="iframe_a">trial_join_complete.html</a></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>로그인</td>
+					<td></td>
+					<td><a href="html/login.html" target="iframe_a">login.html</a></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td></td>
+					<td>아이디/비밀번호 찾기</td>
+					<td><a href="html/login_find.html" target="iframe_a">login_find.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

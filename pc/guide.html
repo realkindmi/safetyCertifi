@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">앱안심인증</a>
+            <nav>
+                <a href="./price.html">서비스 이용요금</a>
+                <a href="./guide.html" class="active">개발가이드</a>
+                <a href="./faq.html">고객센터</a>
+                <a href="../admin/html/00_main.html" class="week">관리자 사이트 <i class="icon icon-more">&#xE001;</i></a>
+            </nav>
+        </div>
+    </header>
+    <section class="title">
+        <div class="container">
+            <h2><strong>API와 SDK 제공으로</strong><br />쉽고 빠르게 적용이 가능합니다</h2>
+        </div>
+    </section>
+    <section class="guide">
+        <div class="container">
+            <h1>앱안심인증, <strong>이렇게 진행됩니다</strong></h1>
+            <div>
+                <h2><strong>1단계</strong>인증ID 생성</h2>
+                <div class="circle"><span>APP</span>
+                    <p>인증요청</p>
+                </div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle dashed"><span>고객사 APP 서버</span></div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle black"><span>앱안심인증 서버</span></div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle dashed"><span>고객사 APP 서버</span></div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle"><span>APP</span>
+                    <p>SMS 발송</p>
+                </div>
+            </div>
+            <div>
+                <h2><strong>2단계</strong>인증 결과 확인</h2>
+                <div class="circle"><span>APP</span>
+                    <p>결과확인폴링</p>
+                </div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle dashed"><span>고객사 APP 서버</span></div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle black"><span>앱안심인증 서버</span></div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle dashed"><span>고객사 APP 서버</span></div>
+                <i class="icon icon-next">&#xE001;</i>
+                <div class="circle"><span>APP</span>
+                    <p>성공</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="container">
+            <h2>지원 대상</h2>
+            <div class="content">
+                <div>
+                    <h4>단말 SDK</h4>
+                    <p>iOS<strong>8.0 이상</strong></p>
+                    <p>Android<strong>4.0 이상</strong></p>
+                </div>
+                <div>
+                    <h4>서버 SDK</h4>
+                    <p>JDK<strong>1.6 이상</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="step">
+        <div class="container">
+            <h1>서비스 <strong>적용 절차</strong></h1>
+            <div class="point">
+                <div>
+                    <span class="circle">1<small>단계</small></span>
+                    <h2>인증 키 정보 발급</h2>
+                    <p>앱안심인증 서비스 구매 혹은 트라이얼 버전 신청</p>
+                    <p>인증키 발급<small>고객사ID(clientID), apikey</small></p>
+                </div>
+                <div>
+                    <span class="circle">2<small>단계</small></span>
+                    <h2>SDK 적용</h2>
+                    <p><a href="">관리자 사이트</a> 내 개발가이드에서 SDK 및 연동 가이드를 다운로드</p>
+                    <p>단말 SDK는 인증이 필요한 APP에 적용</p>
+                    <p>서버 SDK는 APP서버에 적용</p>
+                </div>
+                <div>
+                    <span class="circle">3<small>단계</small></span>
+                    <h2>API 연동</h2>
+                    <p>APP서버에서 연동 개발을 진행<small>연동 가이드 제공</small></p>
+                </div>
+            </div>
+            <div class="desc">
+                <div>
+                    <h4>인증 키 정보</h4>
+                    <ul>
+                        <li><strong>clientID</strong>제휴사 고유 식별자로 서비스 구매 시 발급됩니다.</li>
+                        <li><strong>apikey</strong>제휴사 내 APP서비스 별로 각각 발급합니다.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>참고사항</h4>
+                    <ul>
+                        <li>트라이얼 서비스 이용 후 결제하여 서비스를 이용 시에는 고객사ID(ClientID), 서버SDK 변경이 필요합니다.</li>
+                        <li>2개 이상의 앱에 적용하시는 경우에는 관리자사이트 서비스관리 메뉴에서 앱서비스ID를 추가해주세요.<br />(1개는 기본값으로 설정되어 있으며 변경하실 수
+                            있습니다.)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact transparent border">
+        <div class="container">
+            <div>
+                <h2>무엇을 도와드릴까요?</h2>
+                <a href="inquiry.html" class="btn btn-question">1:1 문의하기<i class="icon icon-more">&#xE001;</i></a>
+            </div>
+            <div>
+                <h4>결제/입금확인 문의</h4>
+                <h2>02-420-5573</h2>
+                <p>purchase@seeroo.co.kr</p>
+            </div>
+            <div>
+                <h4>제품/기술 문의</h4>
+                <h2>02-420-5573</h2>
+                <p>appansim@seeroo.co.kr</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="info">
+                <img src="images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p>©SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav>
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

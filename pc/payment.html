@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+
+<body class="payment">
+    <div class="container">
+        <h1 class="logo">앱안심인증</h1>
+        <section class="info">
+            <h5>1. 주문자 정보</h5>
+            <dl>
+                <dt>이메일 아이디</dt>
+                <dd>app_develop_@company.co.kr</dd>
+                <dt>이름</dt>
+                <dd>홍길동</dd>
+                <dt>휴대폰번호</dt>
+                <dd>01012345678</dd>
+            </dl>
+        </section>
+        <section class="plan">
+            <h5>2. 상품 선택</h5>
+            <h4>월정액 서비스<small>VAT 별도</small></h4>
+            <h4>기간제 서비스<small>VAT 별도</small></h4>
+            <div class="content">
+                <div class="active">
+                    <input type="radio" name="license" id="license-basic" checked /><label for="license-basic"></label>
+                    <h1>베이직</h1>
+                    <h4>1개월</h4>
+                    <h2>100,000<small>원</small></h2>
+                    <p>월 5,000건 문자 인증</p>
+                    <ul>
+                        <li>인증 1건당 20원<small>(초과 시, 1건당 20원)</small></li>
+                        <li class="disabled">추가 ARS인증<small>(비용 추가 10초당 20원)</small></li>
+                        <li class="disabled">적용 앱 개수 1개</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="radio" name="license" id="license-premium" /><label for="license-premium"></label>
+                    <h1>프리미엄</h1>
+                    <h4>1개월</h4>
+                    <h2>500,000<small>원</small></h2>
+                    <p>월 5,000건 문자 인증</p>
+                    <ul>
+                        <li>인증 1건당 20원<small>(초과 시, 1건당 20원)</small></li>
+                        <li class="disabled">추가 ARS인증<small>(비용 추가 10초당 20원)</small></li>
+                        <li class="disabled">적용 앱 개수 무제한</li>
+                        <li class="disabled">사용량 알림</li>
+                        <li class="disabled">보고서 자동 생성</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="radio" name="license" id="license-platinum" /><label for="license-platinum"></label>
+                    <h1>플래티넘</h1>
+                    <h4>6개월</h4>
+                    <h2>2,700,000<small>원</small></h2>
+                    <span class="badge badge-discount"><i>10%</i><em>3,000,000</em>원</span>
+                    <p>월 5,000건 문자 인증</p>
+                    <ul>
+                        <li>인증 1건당 20원<small>(초과 시, 1건당 20원)</small></li>
+                        <li class="disabled">추가 ARS인증<small>(비용 추가 10초당 20원)</small></li>
+                        <li class="disabled">적용 앱 개수 무제한</li>
+                        <li class="disabled">사용량 알림</li>
+                        <li class="disabled">보고서 자동 생성</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="radio" name="license" id="license-special" /><label for="license-special"></label>
+                    <h1>스페셜</h1>
+                    <h4>1년</h4>
+                    <h2>5,100,000<small>원</small></h2>
+                    <span class="badge badge-discount"><i>15%</i><em>6,000,000</em>원</span>
+                    <p>월 5,000건 문자 인증</p>
+                    <ul>
+                        <li>인증 1건당 20원<small>(초과 시, 1건당 20원)</small></li>
+                        <li class="disabled">추가 ARS인증<small>(비용 추가 10초당 20원)</small></li>
+                        <li class="disabled">적용 앱 개수 무제한</li>
+                        <li class="disabled">사용량 알림</li>
+                        <li class="disabled">보고서 자동 생성</li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="btn btn-detail"><span data-text="상품별 기능 자세히 보기"
+                    data-active="상품별 기능 간략 보기"></span></button>
+        </section>
+
+        <section class="billing">
+            <h5>3. 결제정보</h5>
+            <dl>
+                <dt>결제수단</dt>
+                <dd>무통장입금(가상계좌)</dd>
+                <dt>입금금액</dt>
+                <dd>550,000원</dd>
+                <dt>입금은행</dt>
+                <dd>
+                    <select>
+                        <option>국민은행</option>
+                    </select>
+                    <input type="text" value="123-123145-4545" disabled />
+                </dd>
+                <dt>현금영수증 발급</dt>
+                <dd>
+                    <select>
+                        <option>개인</option>
+                    </select>
+                    <select>
+                        <option>현금영수증카드번호</option>
+                    </select>
+                    <input type="text" placeholder="-없이 입력" />
+                </dd>
+            </dl>
+        </section>
+        <button type="button" class="btn btn-buy">구매하기<i class="icon icon-more">&#xE001;</i></button>
+    </div>
+    <footer class="border">
+        <div class="container">
+            <div class="info">
+                <img src="images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p>©SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav>
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        $('input[type=radio').click(function () {
+            $('input[type=radio]').prop('checked', false).parent().removeClass('active');
+            $(this).prop('checked', true).parents('div').addClass('active');
+        });
+        $('.btn-detail').click(function () {
+            $(this).toggleClass('active').prev().toggleClass('expand');
+        });
+    </script>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>

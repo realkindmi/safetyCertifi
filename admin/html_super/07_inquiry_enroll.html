@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_super.css" />
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="clearifx">
+		<div class="header_top">
+			<div class="container">
+				<nav>
+					<a href="">로그아웃</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="container">
+				<div class="header_logo">
+					<a herf="">앱안심인증</a>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li>
+							<a href="#">가입현황</a>
+						</li>
+						<li>
+							<a href="#">계정관리</a>
+						</li>
+						<li>
+							<a href="#">매출현황</a>
+						</li>
+						<li>
+							<a href="#">이용현황</a>
+						</li>
+						<li>
+							<a href="#">통계</a>
+						</li>
+						<li>
+							<a href="#">개발가이드</a>
+						</li>
+						<li>
+							<a class="on" href="#">1:1문의</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="st_title">
+		<div class="container">
+			<h1>답변등록</h1>
+		</div>
+	</div>
+	<section class="contents pt0">
+		<div class="container">
+			<div class="board_wrap">
+				<table class="board_tb">
+					<colgroup>
+						<col style="width:246px;" />
+						<col style="width:auto;" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="2">1. 문의사항</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>문의유형</th>
+							<td>기술문의</td>
+						</tr>
+						<tr>
+							<th>문의제목</th>
+							<td class="tcount">서버 연동 안돼요?</td>
+						</tr>
+						<tr>
+							<th>문의내용</th>
+							<td class="tcount">서버랑 연동이 안돼요. 어떻게 하죠? 서버랑 연동이 안돼요. 어떻게 하죠? 서버랑 연동이 안돼요. 어떻게 하죠? 서버랑 연동이 안돼요. 어떻게 하죠?</td>
+						</tr>
+						<tr>
+							<th>첨부파일</th>
+							<td>
+								<a href="javascript:void(0);" class="tdu">img_08.jpg</a>
+							</td>
+						</tr>
+						<tr>
+							<th>접수일</th>
+							<td>2018.07.05</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr class="hr">
+				<table class="board_tb">
+					<colgroup>
+						<col style="width:246px;" />
+						<col style="width:auto;" />
+						<col style="width:151px;" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="3">2. 회원정보</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--회원-->
+						<tr>
+							<th>구분</th>
+							<td colspan="2">회원</td>
+						</tr>
+						<tr>
+							<th>문의자</th>
+							<td>홍길동</td>
+							<td><button class="btn_medium" type="button">회원정보 확인</button></td>
+						</tr>
+						<!--비회원-->
+						<!--
+						<tr>
+							<th>구분</th>
+							<td colspan="2" class="red">비회원</td>
+						</tr>
+						<tr>
+							<th>문의자</th>
+							<td colspan="2">홍길동</td>
+						</tr>
+						-->
+					</tbody>
+				</table>
+				<hr class="hr">
+				<table class="board_tb">
+					<colgroup>
+						<col style="width:246px;" />
+						<col style="width:auto;" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="2">3. 문의답변</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="vat">답변내용</th>
+							<td class="vat">
+								<textarea class="textarea" placeholder="답변내용을 입력해주세요"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>파일첨부 <span class="red">(최대 250MB)</span></th>
+							<td>
+								<div class="filebox input_button">
+									<input class="input upload_name" placeholder="첨부 파일"><label class="upload_btn" for="input_file">파일 첨부하기</label>
+									<input type="file" id="input_file" class="upload_hidden">
+									<span class="btn_del"></span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_bottom">
+				<a class="medium typeA" href="javascript:void(0);">취소</a>
+				<a class="medium typeB" href="javascript:void(0);">등록하기</a>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="container clearfix">
+			<div class="footer_info">
+                <img src="../images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p class="copy">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

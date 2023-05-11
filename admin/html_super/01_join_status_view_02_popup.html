@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_super.css" />
+</head>
+<body>
+<div class="pop_wrap">
+	<div class="pop_box">
+		<div class="pop_ct">
+			<div class="pop_ct_tt">
+				<h2>SDK 파일 업로드</h2>
+			</div>
+			<div class="pop_item">
+				<dl class="upload_item clearfix">
+					<dt>파일</dt>
+					<dd>
+						<div class="filebox input_button">
+							<input class="input upload_name" placeholder="첨부 파일"><label class="upload_btn" for="input_file">파일 첨부하기</label>
+							<input type="file" id="input_file" class="upload_hidden">
+							<span class="btn_del"></span>
+						</div>
+					</dd>
+					<dt>버전</dt>
+					<dd class="chk_list">
+						<span>
+							<input id="v0.1" class="radio" name="version" type="radio" checked><label for="v0.1">0.1 버전 업</label>
+						</span>
+						<span>
+							<input id="v1.0" class="radio" name="version" type="radio"><label for="v1.0">1.0 버전 업</label>
+						</span>
+					</dd>
+					<dt>수정</dt>
+					<dd>
+						<textarea class="textarea" placeholder="추가내역을 입력해주세요"></textarea>
+						<textarea class="textarea" placeholder="변경내용을 입력해주세요"></textarea>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="bottom_area btns">
+			<button type="button">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

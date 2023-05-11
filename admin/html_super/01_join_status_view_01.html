@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_super.css" />
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="clearifx">
+		<div class="header_top">
+			<div class="container">
+				<nav>
+					<a href="">로그아웃</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="container">
+				<div class="header_logo">
+					<a herf="">앱안심인증</a>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li>
+							<a class="on" href="#">가입현황</a>
+						</li>
+						<li>
+							<a href="#">계정관리</a>
+						</li>
+						<li>
+							<a href="#">매출현황</a>
+						</li>
+						<li>
+							<a href="#">이용현황</a>
+						</li>
+						<li>
+							<a href="#">통계</a>
+						</li>
+						<li>
+							<a href="#">개발가이드</a>
+						</li>
+						<li>
+							<a href="#">1:1문의</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="st_title">
+		<div class="container">
+			<h1>가입현황</h1>
+			<a href="#" class="left"><i class="back"></i>목록</a>
+		</div>
+	</div>
+	<section class="visual">
+		<div class="container">
+			<h2>
+				사업자 <strong>홍길동</strong>
+			</h2>
+			<ul class="user_info clearfix">
+				<li class="clearfix">
+					<span class="item_tt">이메일</span>
+					<span class="item_ct">gildong@seeroo.co.kr</span>
+				</li>
+				<li class="clearfix">
+					<span class="item_tt">휴대폰번호</span>
+					<span class="item_ct change_info">
+						<span class="change_txt tel">01012345678</span>
+						<input class="input change" type="tel" placeholder="- 없이 숫자만 입력" style="display:none;">
+						<button class="btn_medium btn_change" type="button">변경</button>
+					</span>
+				</li>
+			</ul>
+			<div class="link_area">
+				<a href="javascript:void(0);">비밀번호 초기화</a>
+			</div>
+		</div>
+	</section>
+	<div class="tab_menu">
+		<ul>
+			<li>
+				<a class="on" href="#">서비스 정보</a>
+			</li>
+			<li>
+				<a href="#">인증키 / 앱서비스 ID 관리</a>
+			</li>
+			<li>
+				<a href="#">결제정보</a>
+			</li>
+		</ul>
+	</div>
+	<section class="contents pt0">
+		<div class="container">
+			<div class="top_area">
+				<h3>서비스 정보</h3>
+			</div>
+			<div>
+				<table class="info_tb">
+					<colgroup>
+						<col style="width:246px;" />
+						<col style="width:246px;" />
+						<col style="width:388px;" />
+						<col style="width:104px;" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>현황</th>
+							<td colspan="3">사용중</td>
+						</tr>
+						<tr class="change_info">
+							<th>서비스</th>
+							<td class="change_txt" colspan="2">프리미엄</td>
+							<td class="chk_type change" colspan="2" style="display:none;">
+								<span>
+									<input id="sc_basic" class="radio" type="radio" name="join_service" checked><label for="sc_basic">베이직</label>
+								</span>
+								<span>
+									<input id="sc_premium" class="radio" type="radio" name="join_service"><label for="sc_premium">프리미엄</label>
+								</span>
+								<span>
+									<input id="sc_platinum" class="radio" type="radio" name="join_service"><label for="sc_platinum">플래티넘</label>
+								</span>
+								<span>
+									<input id="sc_special" class="radio" type="radio" name="join_service"><label for="sc_special">스페셜</label>
+								</span>
+							</td>
+							<td class="pl0">
+								<button class="btn_change" type="button">변경</button>
+							</td>
+						</tr>
+						<tr>
+							<th>최초 가입일</th>
+							<td colspan="3">2019.05.05</td>
+						</tr>
+						<tr>
+							<th>사용기간</th>
+							<td colspan="3">2019.09.05 ~ 2019.09.30</td>
+						</tr>
+						<tr>
+							<th>입금일</th>
+							<td colspan="3">2019.09.05</td>
+						</tr>
+						<tr>
+							<th>입금현황</th>
+							<td colspan="3">정상</td>
+						</tr>
+						<tr>
+							<th>구매회차</th>
+							<td colspan="3">5회</td>
+						</tr>
+						<tr class="change_info">
+							<th>문자인증 사용량 알림</th>
+							<td>
+								사용 건수
+								<span class="change_txt fwn">45,000건</span>
+								<input class="change input w110" type="text" value="45,000건" style="display:none;">
+							</td>
+							<td class="bl">
+								알림 받는 이메일
+								<span class="change_txt fwn">dev@seeroo.co.kr</span>
+								<input class="change input w210" type="text" value="dev@seeroo.co.kr" style="display:none;">
+							</td>
+							<td class="pl0">
+								<button class="btn_change" type="button">변경</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section class="contents pt30">
+		<div class="container">
+			<div class="top_area">
+				<h3>서비스 사용 이력</h3>
+			</div>
+			<table class="table1">
+				<colgroup>
+					<col style="width:197px;" />
+					<col style="width:393px;" />
+					<col style="width:197px;" />
+					<col style="width:197px;" />
+				</colgroup>
+				<thead>
+					<th>서비스명</th>
+					<th>사용기간</th>
+					<th>신청일</th>
+					<th>해지일</th>
+				</thead>
+				<tbody>
+					<tr class="in_use"><!--191122-->
+						<td>프리미엄</td>
+						<td>2019.08.05 ~</td>
+						<td>2019.05.10</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>베이직</td>
+						<td>2019.07.04 ~ 2019.05.05</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+					</tr>
+					<tr>
+						<td>베이직</td>
+						<td>2019.07.04 ~ 2019.05.05</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+					</tr>
+					<tr>
+						<td>스페셜</td>
+						<td>2019.07.04 ~ 2019.05.05</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+					</tr>
+					<tr>
+						<td>트라이얼</td>
+						<td>2019.07.04 ~ 2019.05.05</td>
+						<td>2019.05.10</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btn_bottom">
+			<button class="medium typeB" href="javascript:void(0);">서비스 해지</button>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="container clearfix">
+			<div class="footer_info">
+                <img src="../images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p class="copy">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+		</div>
+	</footer>
+</div>
+<script>
+$(document).ready(function(){	
+	$('.btn_change').click(function(){
+		$(this).toggleClass('done');
+		
+		if( $(this).hasClass('done') == true ){
+			$(this).closest('.change_info').find('.change_txt').hide();	
+			$(this).closest('.change_info').find('.change').show();
+			$(this).text('변경완료');
+		} else {
+			$(this).closest('.change_info').find('.change_txt').show();	
+			$(this).closest('.change_info').find('.change').hide();
+			$(this).text('변경');
+		}
+	});
+});
+</script>
+</body>
+</html>

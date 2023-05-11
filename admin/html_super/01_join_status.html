@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style_super.css" />
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="clearifx">
+		<div class="header_top">
+			<div class="container">
+				<nav>
+					<a href="">로그아웃</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="container">
+				<div class="header_logo">
+					<a herf="">앱안심인증</a>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li>
+							<a class="on" href="#">가입현황</a>
+						</li>
+						<li>
+							<a href="#">계정관리</a>
+						</li>
+						<li>
+							<a href="#">매출현황</a>
+						</li>
+						<li>
+							<a href="#">이용현황</a>
+						</li>
+						<li>
+							<a href="#">통계</a>
+						</li>
+						<li>
+							<a href="#">개발가이드</a>
+						</li>
+						<li>
+							<a href="#">1:1문의</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="st_title">
+		<div class="container">
+			<h1>가입현황</h1>
+		</div>
+	</div>
+	<section class="visual join">
+		<div class="container">
+			<div class="top_set">
+				<div class="set_date">
+					<a href="#">&#xE000;</a>
+					<span>2019.11.01 ~ 2019.11.30</span><!--191122-->
+					<a href="#" class="inactive">&#xE001;</a>
+				</div>
+				<div class="set_period">
+					<a href="javascript:void(0);">기간 설정</a>
+				</div>
+				<div class="option_box" style="display:none;">
+					<div class="period_option">
+						<ul class="clearfix">
+							<li>
+								<input id="today" class="set_radio" type="radio" name="period" checked><label for="today">오늘</label>
+							</li>
+							<li>
+								<input id="oneweek" class="set_radio" type="radio" name="period"><label for="oneweek">일주일</label>
+							</li>
+							<li>
+								<input id="onemonth" class="set_radio" type="radio" name="period"><label for="onemonth">1개월</label>
+							</li>
+						</ul>
+					</div>
+					<div class="sel_date">
+						<input class="select_box" type="text" value="2019.08.27" readonly>
+					</div>
+					<div class="sel_date">
+						<input class="select_box" type="text" value="2019.08.27" readonly>
+					</div>
+					<div class="search_btn">
+						<button type="button">검색</button>
+					</div>
+				</div>
+			</div>
+			<div class="state_list join_state">
+				<div class="state_total">
+					<h2>사용 중 <strong>5,855</strong> 건</h2>
+				</div>
+				<div class="usage_list">
+					<ul class="clearfix">
+						<li>
+							<span class="usage_name">트라이얼 가입</span>
+							<span class="percent"><em>236</em> 건</span>
+						</li>
+						<li class="purchase">
+							<span class="usage_name">구매</span>
+							<span class="percent"><em>236</em> 건</span>
+							<div class="btn_more">
+								<a href="javascript:void(0);">구매 리스트 더보기</a>
+							</div>
+						</li>
+						<li>
+							<span class="usage_name">중지</span>
+							<span class="percent"><em>236</em> 건</span>
+						</li>
+						<li>
+							<span class="usage_name">해지</span>
+							<span class="percent red"><em>236</em> 건</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="more_list">
+			<div class="container">
+				<ul class="usage_list clearfix">
+					<li>
+						<span class="usage_name">베이직</span>
+						<span class="percent"><em>236</em> 건</span>
+					</li>
+					<li>
+						<span class="usage_name">프리미엄</span>
+						<span class="percent"><em>236</em> 건</span>
+					</li>
+					<li>
+						<span class="usage_name">플래티넘</span>
+						<span class="percent"><em>236</em> 건</span>
+					</li>
+					<li>
+						<span class="usage_name">스페셜</span>
+						<span class="percent red"><em>236</em> 건</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="detail_view join_state">
+		<div class="search_box">
+			<div class="container">
+				<div class="top_area">
+					<h3>상세검색</h3>
+				</div>
+				<div class="search_data">
+					<div class="data_ct">
+						<h5>이메일 ID</h5>
+						<input class="input" type="email" placeholder="이메일 ID 입력">
+					</div>
+					<div class="data_ct">
+						<h5>휴대폰번호</h5>
+						<input class="input" type="text" placeholder="- 없이 숫자만 입력">
+					</div>
+					<div class="data_ct">
+						<h5>이름</h5>
+						<input class="input" type="text" placeholder="이름 입력">
+					</div>
+					<div class="data_ct">
+						<h5>서비스</h5>
+						<select class="select_box">
+							<option>전체</option>
+						</select>
+					</div>
+					<div class="data_ct">
+						<h5>입금현황</h5>
+						<select class="select_box">
+							<option>전체</option>
+						</select>
+					</div>
+					<div class="search_btn">
+						<button type="button">검색</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- S.search_tb -->
+		<div class="search_tb container">
+			<table class="table1">
+				<colgroup>
+					<col style="width:235px;" />
+					<col style="width:100px;" />
+					<col style="width:163px;" />
+					<col style="width:117px;" />
+					<col style="width:117px;" />
+					<col style="width:100px;" />
+					<col style="width:152px;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>이메일 ID</th>
+						<th>이름</th>
+						<th>휴대폰번호</th>
+						<th>서비스</th>
+						<th>가입일</th>
+						<th>입금현황</th>
+						<th>SKD파일 발송여부</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>베이직</td>
+						<td>2019.09.09</td>
+						<td class="red fwb">미납</td>
+						<td class="red fwb">N</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>트라이얼</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="red fwb">미납</td>
+						<td class="red fwb">N</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="red fwb">미납</td>
+						<td class="red fwb">N</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+					<tr>
+						<td>gildong.hong@seeroo.co.kr</td>
+						<td>홍길동</td>
+						<td>010 - **** - 5678</td>
+						<td>프리미엄</td>
+						<td>2019.09.09</td>
+						<td class="fwb">정상</td>
+						<td class="fwb">Y</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="page_nav">
+				<ul class="clearfix">
+					<li class="btn_n first"><a href="#">첫 페이지</a></li>
+					<li class="btn_n prev"><a href="#">이전 페이지</a></li>
+					<li class="on"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">999</a></li>
+					<li class="btn next"><a href="#">다음 페이지</a></li>
+					<li class="btn last"><a href="#">마지막 페이지</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- E.search_tb -->
+	</section>
+	<footer id="footer">
+		<div class="container clearfix">
+			<div class="footer_info">
+                <img src="../images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p class="copy">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+		</div>
+	</footer>
+</div>
+<script>
+$(document).ready(function(){	
+	$('.usage_list .btn_more').click(function(){
+		$(this).parents('.usage_list').toggleClass('open');
+		
+		if( $(this).parents('.usage_list').hasClass('open')){
+			$(this).parents('.visual').find('.more_list').css('top', '0').slideDown();
+		} else {
+			$(this).parents('.visual').find('.more_list').css('top', '-72px').slideUp();
+		}
+	});
+});
+</script>
+</body>
+</html>

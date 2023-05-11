@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1024, user-scalable=yes">
+	<title></title>
+</head>
+<style>
+	* {border:none; margin:0; padding:0; box-sizing:border-box;}
+	body {height:100%; font-size:13px;}
+	a {display:inline-block; text-decoration:none; color:#3399ff;}
+	table {width:100%; margin-bottom:60px; border-collapse:collapse; border-spacing:0; border-bottom:1px solid #0d0d0d;}
+	caption {padding:10px 15px; margin-bottom:5px; font-size:14px; font-weight:bold; color:#fff; text-align:left; background:#000;}
+	table tr:hover {background:#FFFBDF;}
+	th, td {padding:10px 20px; text-align:left; border-top:1px solid #CFCFCF;}
+	thead th {color:#0d0d0d; background:#f0f0f0; border-top:1px solid #CFCFCF;}
+	tbody th, tbody td {font-size:12px;}
+	
+	#wrap {position:relative; width:100%; min-width:1024px; height:100%; min-height:100%;}
+	#header {position:fixed; left:0; right:0; top:0; width:100%; min-width:1024px; height:80px; z-index:100;  border-bottom:1px solid #ddd; box-shadow:0px 2px 3px 1px rgba(26, 26, 26, 0.06); background:#fff;}
+	#header h1 {display:inline-block; line-height:24px;}
+	#header .name {position:absolute; left:30px; top:50%; margin-top:-12px; line-height:24px; }
+	#header .name .logo {display:inline-block; width:28px; height:auto; margin-right:8px; background:url("./images/img_bi_s.png") no-repeat; background-size:contain; text-indent:-9999px;}
+	#header h1, #header .name span {font-size:20px; font-weight:bold; vertical-align:top; color:#0d0d0d;}
+	
+	.sub_title {padding:10px 0; font-size:18px;}
+	
+	.menu {padding:120px 20px 0 20px;}
+
+</style>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div class="name">
+			<h1 class="logo">로고</h1>
+			<span>앱안심인증 관리자 화면 목록</span>
+		</div>
+	</div>
+	
+	<div class="menu">
+		<!-- S.main -->
+		<table>
+			<caption>메인</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>메인</td>
+					<td></td>
+					<td><a href="html/00_main.html" target="_blank">00_main.html</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>트라이얼</td>
+					<td></td>
+					<td><a href="html/00_main_trial.html" target="_blank">00_main_trial.html</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>팝업</td>
+					<td></td>
+					<td><a href="html/00_main_popup.html" target="_blank">00_main_popup.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.main -->
+		<!-- S.menu1 -->
+		<table>
+			<caption>서비스 관리</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>4</td>
+					<td>서비스 정보</td>
+					<td></td>
+					<td><a href="html/01_service_01.html" target="_blank">01_service_01.html</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td></td>
+					<td>서비스 변경 (팝업)</td>
+					<td><a href="html/01_service_01_popup.html" target="_blank">01_service_01_popup.html</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>앱인증키/앱서비스 ID 관리</td>
+					<td></td>
+					<td><a href="html/01_service_02.html" target="_blank">01_service_02.html</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td></td>
+					<td>서비스 추가 (팝업)</td>
+					<td><a href="html/01_service_02_popup.html" target="_blank">01_service_02_popup.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu1 -->
+		<!-- S.menu2 -->
+		<table>
+			<caption>이용현황</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>8</td>
+					<td>이용현황</td>
+					<td></td>
+					<td><a href="html/02_use_state.html" target="_blank">02_use_state.html</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>검색결과 없음</td>
+					<td></td>
+					<td><a href="html/02_use_state_no_result.html" target="_blank">02_use_state_no_result.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu2 -->
+		<!-- S.menu3 -->
+		<table>
+			<caption>실시간 요금</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>10</td>
+					<td>실시간 요금</td>
+					<td></td>
+					<td><a href="html/03_payment.html" target="_blank">03_payment.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu3 -->
+		<!-- S.menu4 -->
+		<table>
+			<caption>결제내역</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>11</td>
+					<td>결제내역</td>
+					<td></td>
+					<td><a href="html/04_payment_history.html" target="_blank">04_payment_history.html</a></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>검색결과 없음</td>
+					<td></td>
+					<td><a href="html/04_payment_history_no_result.html" target="_blank">04_payment_history_no_result.html</a></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td></td>
+					<td>명세서 확인</td>
+					<td><a href="html/04_payment_history_detail.html" target="_blank">04_payment_history_detail.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu4 -->
+		<!-- S.menu5 -->
+		<table>
+			<caption>통계</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>14</td>
+					<td>통계</td>
+					<td></td>
+					<td><a href="html/05_statistics.html" target="_blank">05_statistics.html</a></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>검색결과 없음</td>
+					<td></td>
+					<td><a href="html/05_statistics_no_result.html" target="_blank">05_statistics_no_result.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu5 -->
+		<!-- S.menu6 -->
+		<table>
+			<caption>개발가이드</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>16</td>
+					<td>개발가이드</td>
+					<td></td>
+					<td><a href="html/06_support.html" target="_blank">06_support.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu6 -->
+		<!-- S.menu7 -->
+		<table>
+			<caption>1:1 문의</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>17</td>
+					<td>1:1 문의</td>
+					<td></td>
+					<td><a href="html/07_inquiry.html" target="_blank">07_inquiry.html</a></td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td></td>
+					<td>문의상세</td>
+					<td><a href="html/07_inquiry_detail.html" target="_blank">07_inquiry_detail.html</a></td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>문의하기</td>
+					<td></td>
+					<td><a href="html/07_inquiry_submit.html" target="_blank">07_inquiry_submit.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu7 -->
+		<!-- S.menu8 -->
+		<table>
+			<caption>회원 / 결제정보</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>20</td>
+					<td>회원/결제정보</td>
+					<td></td>
+					<td><a href="html/08_user_info.html" target="_blank">08_user_info.html</a></td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td></td>
+					<td>회원/결제정보 수정</td>
+					<td><a href="html/08_user_info_edit.html" target="_blank">08_user_info_edit.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu8 -->
+		<!-- S.menu9 -->
+		<table>
+			<caption>보고서다운로드</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>22</td>
+					<td>보고서다운로드</td>
+					<td></td>
+					<td><a href="html/09_report.html" target="_blank">09_report.html</a></td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>검색결과 없음</td>
+					<td></td>
+					<td><a href="html/09_report_no_result.html" target="_blank">09_report_no_result.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu9 -->
+		<!-- S.menu10 -->
+		<table>
+			<caption>공통</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>24</td>
+					<td>페이지 에러</td>
+					<td></td>
+					<td><a href="html/page_error.html" target="_blank">page_error.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu10 -->
+		<div class="sub_title">
+			<h2>슈퍼 관리자</h2>
+		</div>
+		<!-- S.main -->
+		<table>
+			<caption>메인</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>메인</td>
+					<td></td>
+					<td><a href="html_super/00_super_main.html" target="_blank">00_super_main.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.main -->
+		<!-- S.menu1 -->
+		<table>
+			<caption>가입현황</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:15%;"/>
+				<col style="width:15%;"/>
+				<col style="width:15%;"/>
+				<col style="width:50%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2</td>
+					<td>가입현황</td>
+					<td></td>
+					<td></td>
+					<td><a href="html_super/01_join_status.html" target="_blank">01_join_status.html</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td></td>
+					<td>서비스 정보</td>
+					<td></td>
+					<td><a href="html_super/01_join_status_view_01.html" target="_blank">01_join_status_view_01.html</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td></td>
+					<td>인증키 / 앱서비스 ID 관리</td>
+					<td></td>
+					<td><a href="html_super/01_join_status_view_02.html" target="_blank">01_join_status_view_02.html</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td></td>
+					<td>인증키 / 앱서비스 ID 관리 결과 없음</td>
+					<td></td>
+					<td><a href="html_super/01_join_status_view_02_no_result.html" target="_blank">01_join_status_view_02_no_result.html</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td></td>
+					<td>팝업</td>
+					<td></td>
+					<td><a href="html_super/01_join_status_view_02_popup.html" target="_blank">01_join_status_view_02_popup.html</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td></td>
+					<td>결제정보 list</td>
+					<td></td>
+					<td><a href="html_super/01_join_status_view_03.html" target="_blank">01_join_status_view_03.html</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td></td>
+					<td></td>
+					<td>결제정보 detail</td>
+					<td><a href="html_super/01_join_status_view_03_detail.html" target="_blank">01_join_status_view_03_detail.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu1 -->
+		<!-- S.menu2 -->
+		<table>
+			<caption>계정관리</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>9</td>
+					<td>계정관리</td>
+					<td></td>
+					<td><a href="html_super/02_account_management.html" target="_blank">02_account_management.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu2 -->
+		<!-- S.menu3 -->
+		<table>
+			<caption>매출현황</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>10</td>
+					<td>매출현황</td>
+					<td></td>
+					<td><a href="html_super/03_sales_status.html" target="_blank">03_sales_status.html</a></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td></td>
+					<td>상세</td>
+					<td><a href="html_super/03_sales_status_detail.html" target="_blank">03_sales_status_detail.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu3 -->
+		<!-- S.menu4 -->
+		<table>
+			<caption>이용현황</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>12</td>
+					<td>거래목록</td>
+					<td></td>
+					<td><a href="html_super/04_usage_status_trade_list.html" target="_blank">04_usage_status_trade_list.html</a></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>MO 수신 데이터</td>
+					<td></td>
+					<td><a href="html_super/04_usage_status_mo_data.html" target="_blank">04_usage_status_mo_data.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu4 -->
+		<!-- S.menu5 -->
+		<table>
+			<caption>통계</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>14</td>
+					<td>일별</td>
+					<td></td>
+					<td><a href="html_super/05_statistics_day.html" target="_blank">05_statistics_day.html</a></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>월별</td>
+					<td></td>
+					<td><a href="html_super/05_statistics_month.html" target="_blank">05_statistics_month.html</a></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>연별</td>
+					<td></td>
+					<td><a href="html_super/05_statistics_year.html" target="_blank">05_statistics_year.html</a></td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>상품별</td>
+					<td></td>
+					<td><a href="html_super/05_statistics_product.html" target="_blank">05_statistics_product.html</a></td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>구매유형별</td>
+					<td></td>
+					<td><a href="html_super/05_statistics_purchase_type.html" target="_blank">05_statistics_purchase_type.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu5 -->
+		<!-- S.menu6 -->
+		<table>
+			<caption>개발가이드</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>19</td>
+					<td>개발가이드</td>
+					<td></td>
+					<td><a href="html_super/06_support.html" target="_blank">06_support.html</a></td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td></td>
+					<td>등록하기</td>
+					<td><a href="html_super/06_support_enroll.html" target="_blank">06_support_enroll.html</a></td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td></td>
+					<td>수정하기</td>
+					<td><a href="html_super/06_support_edit.html" target="_blank">06_support_edit.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu6 -->
+		<!-- S.menu7 -->
+		<table>
+			<caption>1:1 문의</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>22</td>
+					<td>1:1 문의</td>
+					<td></td>
+					<td><a href="html_super/07_inquiry.html" target="_blank">07_inquiry.html</a></td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>답변등록</td>
+					<td></td>
+					<td><a href="html_super/07_inquiry_enroll.html" target="_blank">07_inquiry_enroll.html</a></td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>문의상세</td>
+					<td></td>
+					<td><a href="html_super/07_inquiry_detail.html" target="_blank">07_inquiry_detail.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu7 -->
+		<!-- S.menu10 -->
+		<table>
+			<caption>공통</caption>
+			<colgroup>
+				<col style="width:5%;"/>
+				<col style="width:20%;"/>
+				<col style="width:20%;"/>
+				<col style="width:55%;" />
+			</colgroup>
+			<thead>
+				<th>No</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>파일명 (Link)</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>25</td>
+					<td>페이지 에러</td>
+					<td></td>
+					<td><a href="html_super/page_error.html" target="_blank">page_error.html</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- E.menu10 -->
+	</div>
+</div>
+</body>
+</html>

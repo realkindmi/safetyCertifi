@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="clearifx">
+		<div class="header_top">
+			<div class="container">
+				<nav>
+					<a href="">회원/결제정보</a>
+					<a href="">보고서 다운로드</a>
+					<a href="">로그아웃</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="container">
+				<div class="header_logo">
+					<a herf="">앱안심인증</a>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li>
+							<a href="" class="on">서비스 관리</a>
+						</li>
+						<li>
+							<a href="">이용현황</a>
+						</li>
+						<li>
+							<a href="">실시간 요금</a>
+						</li>
+						<li>
+							<a href="">결제내역</a>
+						</li>
+						<li>
+							<a href="">통계</a>
+						</li>
+						<li>
+							<a href="">개발가이드</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="st_title">
+		<div class="container">
+			<h1>서비스 관리</h1>
+		</div>
+	</div>
+	<div class="tab_menu">
+		<ul>
+			<li>
+				<a href="#">서비스 정보</a>
+			</li>
+			<li>
+				<a href="#" class="on">인증키 / 앱서비스 ID 관리</a>
+			</li>
+		</ul>
+	</div>
+	<section class="visual">
+		<div class="container">
+			<h3>
+				<strong>clientID</strong>
+				<!--<strong>clientID (트라이얼용)</strong>-->
+			</h3>
+			<p class="key">QWERTYUIOPASDFGHJKLIQWER</p>
+			<!--
+			<p class="key">인증키가 발급되면 메일로 알려드립니다</p>
+			-->
+			<div class="text_copy">
+				<a href="#" class="tdu">복사</a>
+				<input type="text">	
+			</div>
+		</div>
+	</section>
+	<section class="contents">
+		<div class="container">
+			<div class="detail_view">
+				<div class="top_area">
+					<h3>서비스 적용</h3>
+					<a href="javascript:void(0);" class="sc_add">서비스 추가</a>
+				</div>
+				<table class="table1 service_tb">
+					<colgroup>
+						<col style="width:181px;"/>
+						<col style="width:118px;"/>
+						<col style="width:394px;"/>
+						<col style="width:68px;"/>
+						<col style="width:118px;"/>
+						<col style="width:105px;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>앱서비스 ID</th>
+							<th>사용여부</th>
+							<th colspan="2">apiKey</th>
+							<th>등록일</th>
+							<th>정보변경</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="ct_text">프리미엄뇸냠흥잌러념프리미엄뇸냠흥잌러념</div>
+								<div class="ct_change">
+									<input class="input" type="text" value="프리미엄뇸냠흥잌러념프리미엄뇸냠흥잌러념">
+								</div>
+							</td>
+							<td>
+								<div class="ct_text fwb">사용</div>
+								<div class="ct_change">
+									<select class="select_box">
+										<option selected>사용</option>
+										<option>미사용</option>	
+									</select>
+								</div>
+							</td>
+							<td class="key">1QWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGHQWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGH</td>
+							<td class="text_copy">
+								<a href="javascript:void(0);">복사</a>
+								<input type="text">
+							</td>
+							<td>2019.05.10</td>
+							<td class="btn_change">
+								<button type="button" class="btn_medium typeA">변경</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="ct_text">Default</div>
+								<div class="ct_change">
+									<input class="input" type="text" value="Default">
+								</div>
+							</td>
+							<td>
+								<div class="ct_text fwb">사용</div>
+								<div class="ct_change">
+									<select class="select_box">
+										<option selected>사용</option>
+										<option>미사용</option>
+									</select>
+								</div>
+							</td>
+							<td class="key">2QWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGHQWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGH</td>
+							<td class="text_copy">
+								<a href="javascript:void(0);">복사</a>
+								<input type="text">
+							</td>
+							<td>2019.05.10</td>
+							<td class="btn_change">
+								<button type="button" class="btn_medium typeA">변경</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="ct_text">Default2</div>
+								<div class="ct_change">
+									<input class="input" type="text" value="Default2">
+								</div>
+							</td>
+							<td>
+								<div class="ct_text red fwb">미사용</div>
+								<div class="ct_change">
+									<select class="select_box">
+										<option>사용</option>
+										<option selected>미사용</option>
+									</select>
+								</div>
+							</td>
+							<td class="key">3QWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGHQWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGH</td>
+							<td class="text_copy">
+								<a href="javascript:void(0);">복사</a>
+								<input type="text">
+							</td>
+							<td>2019.05.10</td>
+							<td class="btn_change">
+								<button type="button" class="btn_medium typeA">변경</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="ct_text">프리미엄뇸냠흥잌러념프리미엄뇸냠흥잌러념</div>
+								<div class="ct_change">
+									<input class="input" type="text" value="프리미엄뇸냠흥잌러념프리미엄뇸냠흥잌러념">
+								</div>
+							</td>
+							<td>
+								<div class="ct_text fwb">사용</div>
+								<div class="ct_change">
+									<select class="select_box">
+										<option selected>사용</option>	
+										<option>미사용</option>
+									</select>
+								</div>
+							</td>
+							<td class="key">4QWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGHQWERTYUIOPASDFGHJKLIQWERTYUIOPASDFGH</td>
+							<td class="text_copy">
+								<a href="javascript:void(0);">복사</a>
+								<input type="text">
+							</td>
+							<td>2019.05.10</td>
+							<td class="btn_change">
+								<button type="button" class="btn_medium typeA">변경</button>
+							</td>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	<script>
+	$(document).ready(function(){
+		/* 정보 변경 */
+		var btn_change = $('.service_tb .btn_change');
+		btn_change.click(function(){
+			var this_row = $(this).parent('tr');
+			
+			$(this).toggleClass('active');
+			
+			if( btn_change.hasClass('active') ){
+				this_row.find('.ct_change').show();
+				this_row.find('.ct_text').hide();
+				$(this).children('button').text('변경완료').addClass('typeB').removeClass('typeA');
+			} else {
+				this_row.find('.ct_change').hide();
+				this_row.find('.ct_text').show();
+				$(this).children('button').text('변경완료').addClass('typeA').removeClass('typeB');
+			}
+		});
+		/* 텍스트 복사 */
+		$('.text_copy a').click(function(){
+			var k_text = $(this).parent().siblings('.key').text();
+			
+			$(this).siblings('input[type=text]').val(k_text).select();
+			document.execCommand('copy');
+		});
+	});
+	</script>
+	<section class="contact">
+		<div class="container">
+			<ul class="contact_list clearfix">
+				<li class="contact_us">
+					<h4>고객센터</h4>
+					<p>자세한 상담이 필요하시면 <a href="">1:1문의하기</a></p>
+				</li>
+				<li class="contact_mail">
+					<h4>이메일 문의</h4>
+					<p>app_dev@seeroo.co.kr</p>
+				</li>
+				<li class="contact_tel">
+					<h4>전화 문의</h4>
+					<p>02-420-5537</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="container clearfix">
+			<div class="footer_info">
+                <img src="../images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p class="copy">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

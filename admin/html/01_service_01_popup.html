@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+<div class="pop_wrap">
+	<div class="pop_box">
+		<div class="service_change">
+			<div class="guide_txt">서비스 변경</div>
+			<div class="desc_txt">
+				<p>서비스 변경 시, <span class="red">익월 1일부터 적용</span>됩니다</p>
+			</div>
+			<ul class="sc_change_list clearfix">
+                <li class="active">
+                   	<div class="sc_type">월정액 서비스</div>
+                    <input id="basic" class="sc_radio" type="radio" name="license" checked /><label for="basic">베이직</label>
+                    <div class="sc_price">
+                   	 	<span>1개월</span>
+                   	 	<span class="price">2,700,000<small class="unit">원</small></span>
+                    </div>
+                    <p class="info_txt">월 문자인증 5,000건</p>
+                    <ul class="desc_txt">
+                        <li>문자인증 1건당 20원<span>(초과 시, 1건당 20원)</span></li>
+                        <li class="disabled">추가 ARS 인증<span>(비용 추가 1건당 100원)</span></li>
+                        <li class="disabled">적용 앱 개수 1개</li>
+                    </ul>
+                </li>
+                <li>
+                   	<div class="sc_type">월정액 서비스</div>
+                    <input id="premium" class="sc_radio" type="radio" name="license" /><label for="premium">프리미엄</label>
+                    <div class="sc_price">
+                   	 	<span>1개월</span>
+                   	 	<span class="price">2,700,000<small class="unit">원</small></span>
+                    </div>
+                    <p class="info_txt">월 문자인증 5,000건</p>
+                    <ul class="desc_txt">
+                        <li>문자인증 1건당 20원<span>(초과 시, 1건당 20원)</span></li>
+                        <li class="disabled">추가 ARS 인증<span>(비용 추가 1건당 100원)</span></li>
+                        <li class="disabled">적용 앱 개수 무제한</li>
+                        <li class="disabled">사용량 알림</li>
+                        <li class="disabled">보고서 자동 생성</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sc_type">기간제 서비스</div>
+                    <input id="platinum" class="sc_radio" type="radio" name="license" /><label for="platinum">플래티넘</label>
+                    <div class="sc_price">
+                   	 	<span>6개월</span>
+                   	 	<span class="price">2,700,000<small class="unit">원</small></span>
+                    </div>
+                    <div class="badge_discount">
+                    	<i>10%</i><em>3,000,000</em>원
+                    </div>
+                    <p class="info_txt">월 문자인증 5,000건</p>
+                    <ul class="desc_txt">
+                        <li>문자인증 1건당 20원<span>(초과 시, 1건당 20원)</span></li>
+                        <li class="disabled">추가 ARS 인증<span>(비용 추가 1건당 100원)</span></li>
+                        <li class="disabled">적용 앱 개수 무제한</li>
+                        <li class="disabled">사용량 알림</li>
+                        <li class="disabled">보고서 자동 생성</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sc_type">기간제 서비스</div>
+                    <input id="special" class="sc_radio" type="radio" name="license" /><label for="special">스페셜</label>
+                  	<div class="sc_price">
+                  	 	<span>1개월</span>
+                   	 	<span class="price">5,100,000<small class="unit">원</small></span>
+                   	</div>
+                   	<div class="badge_discount">
+                    	<i>15%</i><em>6,000,000</em>원
+                    </div>
+                    <p class="info_txt">월 문자인증 5,000건</p>
+                    <ul class="desc_txt">
+                        <li>문자인증 1건당 20원<span>(초과 시, 1건당 20원)</span></li>
+                        <li class="disabled">추가 ARS 인증<span>(비용 추가 1건당 100원)</span></li>
+                        <li class="disabled">적용 앱 개수 무제한</li>
+                        <li class="disabled">사용량 알림</li>
+                        <li class="disabled">보고서 자동 생성</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="detail_view">
+            	<a href="javascript:void(0);">상품별 기능 간략 보기</a>
+            </div>
+		</div>
+		<div class="bottom_area btns">
+			<button type="button">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+	$('input.sc_radio').click(function () {
+		$('input.sc_radio').prop('checked', false).parents('li').removeClass('active');
+		$(this).prop('checked', true).parents('li').addClass('active');
+	});
+	
+	$('.detail_view a').click(function(){
+		$(this).toggleClass('active').parents('.service_change').children('.sc_change_list').find('.desc_txt').slideToggle(300);
+	});
+});
+</script>
+</body>
+</html>

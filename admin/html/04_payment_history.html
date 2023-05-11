@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="clearifx">
+		<div class="header_top">
+			<div class="container">
+				<nav>
+					<a href="">회원/결제정보</a>
+					<a href="">보고서 다운로드</a>
+					<a href="">로그아웃</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="container">
+				<div class="header_logo">
+					<a herf="">앱안심인증</a>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li>
+							<a href="">서비스 관리</a>
+						</li>
+						<li>
+							<a href="">이용현황</a>
+						</li>
+						<li>
+							<a href="">실시간 요금</a>
+						</li>
+						<li>
+							<a href="" class="on">결제내역</a>
+						</li>
+						<li>
+							<a href="">통계</a>
+						</li>
+						<li>
+							<a href="">개발가이드</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="st_title">
+		<div class="container">
+			<h1>결제내역</h1>
+		</div>
+	</div>
+	<section class="visual payment">
+		<div class="container">
+			<ul class="payment_list clearfix">
+				<li>
+					<h3>청구금액</h3>
+					<span class="desc">6월</span>
+					<span class="fee"><strong>500,000</strong> 원</span>
+				</li>
+				<li>
+					<h3>미납내역</h3>
+					<span class="desc">2건</span>
+					<span class="fee red"><strong>500,000</strong> 원</span>
+				</li>
+			</ul>
+			<div class="visual_box">
+				<ul class="clearfix">
+					<li>
+						<div class="title">
+							<h5>입금정보</h5>
+						</div>
+						<div>
+							<span>국민은행  243-222324-333 (㈜시루정보)</span>
+							<span>국민은행  243-222324-333 (㈜시루정보)</span>
+						</div>
+					</li>
+					<li>
+						<div class="title">
+							<h5>결제일</h5>
+						</div>
+						<div>
+							<span>매월 10일 23시 59분까지</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="detail_view payment_ct">
+		<div class="search_box">
+			<div class="container">
+				<div class="top_area">
+					<h3>상세검색</h3>
+				</div>
+				<div class="search_data">
+					<div class="data_ct">
+						<h5>검색기간</h5>
+						<!--191018-->
+						<div class="date_period">
+							<input class="select_box" type="text" value="2017.01">
+							<span class="hyphen">~</span>
+							<input class="select_box" type="text" value="2019.06">
+						</div>
+						<!--191018-->
+					</div>
+					<div class="data_ct w254">
+						<h5>납부여부</h5>
+						<select class="select_box">
+							<option>전체</option>
+						</select>
+					</div>
+					<div class="search_btn">
+						<button type="button">검색</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search_tb container">
+			<table class="table1 pd">
+				<colgroup>
+					<col style="width:98px;" />
+					<col style="width:237px;" />
+					<col style="width:118px;" />
+					<col style="width:118px;" />
+					<col style="width:138px;" />
+					<col style="width:177px;" />
+					<col style="width:98px;" />
+				</colgroup>
+				<thead>
+					<th>사용월</th>
+					<th>납부금액</th>
+					<th>납부기한</th>
+					<th>납부일</th>
+					<th>납부여부</th>
+					<th>증빙처리</th>
+					<th>명세서</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">10,055,555원 <em class="fwn">(미납금 포함)</em></td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.04</td>
+						<td class="fwb">555,555원</td>
+						<td>2019.04.10</td>
+						<td></td>
+						<td class="red fwb">미납 <em class="fwn">(3일 연체)</em></td>
+						<td class="red fwb">미처리</td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+					<tr>
+						<td>2019.05</td>
+						<td class="fwb">500,000원</td>
+						<td>2019.05.10</td>
+						<td>2019.05.08</td>
+						<td>2019.05.10</td>
+						<td class="fwb">처리 <em class="fwn">(12345678901)</em></td>
+						<td>
+							<a class="btn_view" href="javascript:void(0);">확인</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="page_nav">
+				<ul class="clearfix">
+					<li class="btn_n first"><a href="#">첫 페이지</a></li>
+					<li class="btn_n prev"><a href="#">이전 페이지</a></li>
+					<li class="on"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">999</a></li>
+					<li class="btn next"><a href="#">다음 페이지</a></li>
+					<li class="btn last"><a href="#">마지막 페이지</a></li>
+				</ul>
+				<div class="btn_area">
+					<a class="btn_download" href="javascript:void(0);">엑셀 다운로드</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="container">
+			<ul class="contact_list clearfix">
+				<li class="contact_us">
+					<h4>고객센터</h4>
+					<p>자세한 상담이 필요하시면 <a href="">1:1문의하기</a></p>
+				</li>
+				<li class="contact_mail">
+					<h4>이메일 문의</h4>
+					<p>app_dev@seeroo.co.kr</p>
+				</li>
+				<li class="contact_tel">
+					<h4>전화 문의</h4>
+					<p>02-420-5537</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="container clearfix">
+			<div class="footer_info">
+                <img src="../images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p class="copy">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+		</div>
+	</footer>
+</div>	
+</body>
+</html>

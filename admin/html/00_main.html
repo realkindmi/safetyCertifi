@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
+<body>
+<div id="wrap">
+	<header id="header" class="clearifx">
+		<div class="header_top">
+			<div class="container">
+				<nav>
+					<a href="08_user_info.html">회원/결제정보</a>
+					<a href="09_report.html">보고서 다운로드</a>
+					<a href="">로그아웃</a>
+				</nav>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="container">
+				<div class="header_logo">
+					<a herf="">앱안심인증</a>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li>
+							<a href="01_service_01.html">서비스 관리</a>
+						</li>
+						<li>
+							<a href="02_use_state.html">이용현황</a>
+						</li>
+						<li>
+							<a href="03_payment.html">실시간 요금</a>
+						</li>
+						<li>
+							<a href="04_payment_history.html">결제내역</a>
+						</li>
+						<li>
+							<a href="05_statistics.html">통계</a>
+						</li>
+						<li>
+							<a href="06_support.html">개발가이드</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="visual">
+		<div class="container">
+			<h2>
+				<strong>프리미엄</strong> 이용 중
+			</h2>
+			<p>
+				월 기본 문자인증 제공 50,000건
+			</p>
+			<a href="#" class="btn_go">서비스 관리<i>&#xE001;</i></a>
+		</div>
+	</section>
+	<section class="status contents">
+		<div class="container">
+			<div class="top_area">
+				<h3>이용 현황</h3>
+				<a href="" class="refresh">새로고침</a>
+			</div>
+			<div class="clearfix">
+				<div class="item_box">
+					<div class="total_view clearfix">
+						<span class="fl">오늘</span>
+						<span class="fr">
+							<a href="javascript:voic(0);">
+								<strong class="hl">236</strong> 건 인증<i>&#xE001;</i>
+							</a>
+						</span>
+					</div>
+					<ul class="detail_info">
+						<li>
+							<span class="fl">문자인증</span>
+							<span class="fr"><em>236</em>건</span>
+						</li>
+						<li>
+							<span class="fl">ARS인증</span>
+							<span class="fr"><em>2</em>건</span>
+						</li>
+						<li>
+							<span class="fl">전일대비</span>
+							<span class="fr chg down"><em>14.3</em>%</span>
+						</li>
+					</ul>
+				</div>
+				<div class="item_box">
+					<div class="total_view clearfix">
+						<span>이번 달</span>
+						<a class="fr"><strong class="hl">236</strong> 건 인증<i>&#xE001;</i></a>
+					</div>
+					<ul class="detail_info clearfix">
+						<li>
+							<span class="fl">문자인증</span>
+							<span class="fr"><em>236</em>건 / <em>236</em>건</span>
+						</li>
+						<li>
+							<span class="fl">ARS인증</span>
+							<span class="fr"><em>2</em>건</span>
+						</li>
+						<li>
+							<span class="fl">전일대비</span>
+							<span class="fr chg up"><em>14.3</em>%</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="top_area clearfix">
+				<h3>실시간 이용요금 <span>VAT포함</span></h3>
+				<a href="">상세보기</a>
+			</div>
+			<div class="ct_txt">
+				<p class="date">2019.05.01 ~ 2019.05.08</p>
+				<p>청구금액 <strong class="hl">570,000</strong> 원</p>
+			</div>
+			<div class="detail_info clearfix">
+				<div class="item_box tt">
+					<h5>기본제공</h5>
+					<ul>
+						<li>
+							<span class="fl">기본요금</span>
+							<span class="fr">500,000원</span>
+						</li>
+						<li>
+							<span class="fl">문자인증</span>
+							<!-- 190923 -->
+							<span class="fr">
+								<span>551건 사용&nbsp;/&nbsp;</span>
+								<span>월 50,000건 제공</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="item_box tt">
+					<h5>추가이용</h5>
+					<ul>
+						<li>
+							<span class="fl">문자인증</span>
+							<span class="fr">999건 / 19,980원</span>
+						</li>
+						<li>
+							<span class="fl">ARS인증</span>
+							<!-- 190923 -->
+							<span class="fr">
+								<span>9시간 59분 50초&nbsp;/&nbsp;</span>
+								<span>700,660원</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--<script> /* 190923 삭제 */
+			$(document).ready(function(){
+				var sms_t = $('.sms').text().length,
+					ars_t = $('.ars').text().length;
+				
+				if ( sms_t > 10 ) $('.sms').css('display', 'block');
+				if ( ars_t > 14 ) $('.ars').css('display', 'block');
+			});
+			</script>-->
+		</div>
+	</section>
+	<section class="history">
+		<div class="container clearfix">
+			<div class="item_box">
+				<div class="top_area clearfix">
+					<h3>결제내역</h3>
+					<a href="04_payment_history_detail.html">상세보기</a>
+				</div>
+				<div class="item_info">
+					<div class="info_txt">
+						<p>2019년 4월 결제금액은</p>
+						<p><strong><span class="hl s3">555,789</span>원입니다</strong></p>
+						<p class="red">입금기한은 2019.05.05까지입니다</p>
+					</div>
+				</div>
+				<!--<div class="item_info">
+					<div class="info_txt">
+						<p>결제내역이 없습니다</p>
+					</div>
+				</div>-->
+				<!--<div class="item_info">
+					<div class="info_txt">
+						<p>2019년 4월 결제금액은</p>
+						<p><strong><span class="hl s3">555,789</span>원입니다</strong></p>
+					</div>
+				</div>-->
+			</div>
+			<div class="item_box">
+				<div class="top_area clearfix">
+					<h3>입금내역</h3>
+					<a href="">상세보기</a>
+				</div>
+				<div class="item_info">
+					<div class="info_txt">
+						<p>2019년 3월 입금내역이</p>
+						<p><strong>확인되었습니다</strong></p>
+					</div>
+				</div>
+				<!--<div class="item_info">
+					<div class="info_txt">
+						<p>입금내역이 없습니다</p>
+					</div>
+				</div>-->
+				<!--<div class="item_info">
+					<div class="info_txt">
+						<p>2019년 3월 요금이</p>
+						<p class="red"><strong>미납되었습니다</strong></p>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="container">
+			<ul class="contact_list clearfix">
+				<li class="contact_us">
+					<h4>고객센터</h4>
+					<p>자세한 상담이 필요하시면 <a href="07_inquiry_submit.html">1:1문의하기</a></p>
+				</li>
+				<li class="contact_mail">
+					<h4>이메일 문의</h4>
+					<p>app_dev@seeroo.co.kr</p>
+				</li>
+				<li class="contact_tel">
+					<h4>전화 문의</h4>
+					<p>02-420-5537</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="container clearfix">
+			<div class="footer_info">
+                <img src="../images/img_ci_text.png" />
+                <p>주)시루정보</p>
+                <p><span>대표이사 : 류창화</span><span>사업자등록번호 : 215-87-29560</span></p>
+                <p>서울시 마포구 마포대로 109,101동 2601호(공덕동, 롯데캐슬 프레지던트)</p>
+                <p class="copy">&copy;SEEROO Information Co.,Ltd. All rights reserved.</p>
+            </div>
+            <nav class="footer_link">
+                <a href="https://www.seeroo.co.kr/" target="_blank">회사소개</a>
+                <a href="terms_service.html" target="_blank">서비스 이용약관</a>
+                <a href="terms_privacy_collect.html" target="_blank">개인정보 수집 및 이용 동의</a>
+                <a href="terms_privacy.html" target="_blank">개인정보 처리방침</a>
+            </nav>
+		</div>
+	</footer>
+</div>	
+</body>
+</html>
